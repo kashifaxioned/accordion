@@ -127,10 +127,6 @@ li {
   flex-flow: column wrap;
 }
 
-.accordion-item {
-
-}
-
 .accordion-heading {
   padding: 10px 20px;
   display: flex;
