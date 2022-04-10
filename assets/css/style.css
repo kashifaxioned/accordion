@@ -120,7 +120,45 @@ li {
   main styling starts here
 =================================*/
 
+.accordion-container {
+  width: 60%;
+  margin: 100px auto;
+  display: flex;
+  flex-flow: column wrap;
+}
 
+.accordion-item {
+
+}
+
+.accordion-heading {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F3E9DD;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.accordion-heading::after {
+  content: "+";
+  flex-basis: auto;
+}
+
+.show .accordion-heading::after{ content: "-"; }
+
+.accordion-info {
+  padding: 40px 20px;
+  display: none;
+  line-height: 1.6;
+  transform: translateY(-100px);
+  transition: .5s ease-in-out;
+}
+
+.show .accordion-info { 
+  display: block; 
+  transform: translateY(0);
+}
 
 
 
